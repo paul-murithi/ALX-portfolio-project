@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
-import logoImage from "../assets/7c829fba9e354e7d96fe6a44cd79f823.png";
-import toggleBars from "../assets/bars-solid.svg";
+import logoImage from "../../assets/7c829fba9e354e7d96fe6a44cd79f823.png";
+import toggleBars from "../../assets/bars-solid.svg";
 import "./Header.css";
-import Image from "./Image";
+import Image from "../Image/Image";
 
 const Header = () => {
   // Mobile responsiveness
@@ -12,9 +12,28 @@ const Header = () => {
     setNavOpen(!navOpen);
   };
 
+  const [isFixed, setIsFixed] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 70) {
+        // Adjust this value based on when you want the header to become fixed
+        setIsFixed(true);
+      } else {
+        setIsFixed(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <header>
-      <nav className="header-container">
+      <nav className={`header-container ${isFixed ? "fixed" : ""}`}>
         <div className="nav-img">
           <Link to={"/home"}>
             <Image src={logoImage} alt={"logo"} className={"logo"} />
@@ -51,14 +70,14 @@ const Header = () => {
             </NavLink>
           </li>
           <li>
-            <span className="bordered-link">
+            <p className="bordered-link">
               <NavLink
                 to="/auth"
                 className={({ isActive }) => (isActive ? "active" : "")}
               >
                 Sign In
               </NavLink>
-            </span>
+            </p>
           </li>
         </ul>
 
