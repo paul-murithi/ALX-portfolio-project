@@ -1,8 +1,21 @@
 import { useState } from "react";
-import axios from "axios";
+import HomePage from "./pages/Homepage/HomePage";
+import Header from "./Common/Header";
+import { createBrowserRouter, Route, RouterProvider } from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <HomePage />,
+  },
+  {
+    path: "/home",
+    element: <HomePage />,
+  },
+]);
 
 function App() {
-  return <></>;
+  return <RouterProvider router={router} />;
 }
 
 export default App;
