@@ -1,0 +1,39 @@
+@import "../../../styles/variables.css";
+.cta-section {
+  margin: var(--margin-base);
+  padding: 3rem 1rem;
+  text-align: center;
+  font-family: var(--font-family);
+}
+
+.cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-headline {
+  color: var(--text-heading-color);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cta-subheadline {
+  font-size: var(--font-size-large);
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+.cta-button {
+  background: var(--secondary-color);
+  border: none;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background: var(--button-hover-color);
+}

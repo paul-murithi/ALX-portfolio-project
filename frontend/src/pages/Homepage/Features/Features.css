@@ -1,0 +1,54 @@
+@import "../../../styles/variables.css";
+
+.services {
+  width: 16.6875rem;
+  height: 19.625rem;
+  border-radius: var(--card-border-radius);
+  background: var(--white);
+  box-shadow: var(--card-box-shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: var(--padding-base);
+}
+
+.services img {
+  width: var(--image-width);
+  height: var(--image-height);
+  flex-shrink: 0;
+}
+
+.services h1 {
+  color: var(--text-heading-color);
+  text-align: center;
+  font-size: var(--font-size-large);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-bold);
+}
+
+.services p {
+  color: var(--textclr);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: var(--text-line-height);
+}
+
+.category-services-headers {
+  text-align: center;
+  margin: 4rem auto;
+}
+
+.category-services-headers h2 {
+  color: var(--text-heading-color);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+}
+
+.category-services {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}

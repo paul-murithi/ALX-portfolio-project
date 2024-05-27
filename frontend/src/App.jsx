@@ -1,7 +1,5 @@
-import { useState } from "react";
 import HomePage from "./pages/Homepage/HomePage";
-import Header from "./Common/Header/Header";
-import { createBrowserRouter, Route, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
   {

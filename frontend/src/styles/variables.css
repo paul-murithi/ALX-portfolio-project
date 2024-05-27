@@ -6,24 +6,39 @@
   --secondary-color: #f1a501;
   --background-color: #ffffff;
   --text-color: #212832;
+  --textclr: #5e6282;
   --link-color: #212832;
   --link-hover-color: #f1a501;
+  --button-hover-color: #cb8b01;
   --nav-background-color: #fff1da;
   --border-color: #000000;
+  --white: #fff;
+  --text-heading-color: #1e1d4c;
 
   /* Typography variables */
-  --font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-    sans-serif;
+  --font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   --font-size-base: 1.0625rem;
+  --font-size-xl: 3.125rem;
   --font-size-large: 1.25rem;
   --font-size-small: 0.875rem;
   --font-weight-normal: 400;
   --font-weight-bold: 700;
+  --card-box-shadow: 0px 1.85px 3.15px 0px rgba(0, 0, 0, 0),
+    0px 8.15px 6.52px 0px rgba(0, 0, 0, 0.01),
+    0px 20px 13px 0px rgba(0, 0, 0, 0.01),
+    0px 38.52px 25.48px 0px rgba(0, 0, 0, 0.01),
+    0px 64.81px 46.85px 0px rgba(0, 0, 0, 0.02),
+    0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+  --card-border-radius: 2.25rem;
+  --image-width: 5.75rem;
+  --image-height: 4.875rem;
 
   /* Spacing variables */
   --padding-base: 0.5rem;
   --margin-base: 0.5rem;
   --gap-base: 1rem;
+  --text-line-height: 1.625rem;
 
   /* Layout variables */
   --header-height: 3rem;

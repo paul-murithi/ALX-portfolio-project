@@ -1,0 +1,45 @@
+.top-destinations {
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: right;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.destination {
+  color: var(--textclr, #5e6282);
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 124.5%;
+  border-radius: 1.5rem;
+  width: 16.6875rem;
+  box-shadow: var(--card-box-shadow);
+  margin-left: 2rem;
+}
+
+.destination-name {
+  width: 70%;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.category-services-headers h2 {
+  color: var(--text-heading-color);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+}
+
+.navigation {
+  display: flex;
+  width: 70%;
+  margin: 1rem auto;
+  justify-content: space-between;
+}
+
+.navigation img {
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+}

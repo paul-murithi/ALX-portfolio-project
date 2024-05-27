@@ -1,10 +1,4 @@
-:root {
-  --primary-color: #f1a501;
-  --secondary-color: #212832;
-  --background-color: #fff1da;
-  --font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-    sans-serif;
-}
+@import "../../../styles/variables.css";
 
 .hero {
   height: calc(100vh - 3rem);
@@ -14,7 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: var(--white);
   text-align: center;
   position: relative;
   padding-top: 3rem;
@@ -58,19 +52,19 @@
 .hero-search-form button {
   padding: 0.75rem;
   font-size: 1rem;
-  border-radius: 5px;
+  border-radius: 0.575rem;
 }
 
 .hero-search-form input {
   font-family: var(--font-family);
 }
 .hero-search-form input:focus {
-  border: 3px solid var(--primary-color);
+  border: 3px solid var(--secondary-color);
   outline: none;
 }
 
 .hero-search-form button {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -78,5 +72,5 @@
 }
 
 .hero-search-form button:hover {
-  background-color: #cb8b01;
+  background-color: var(--button-hover-color);
 }
