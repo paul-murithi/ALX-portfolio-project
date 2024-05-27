@@ -29,7 +29,7 @@ const CombinedAuth = () => {
   const handleSigninSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-    // Simulate API call
+    // Simulated API call
     setTimeout(() => {
       setLoading(false);
       alert("Sign In successful");
@@ -39,7 +39,6 @@ const CombinedAuth = () => {
   const handleSignupSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-    // Simulate API call
     setTimeout(() => {
       setLoading(false);
       alert("Sign Up successful");
