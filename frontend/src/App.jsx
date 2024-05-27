@@ -1,5 +1,6 @@
 import HomePage from "./pages/Homepage/HomePage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import CombinedAuth from "./pages/Auth/Auth";
 
 const router = createBrowserRouter([
   {
@@ -9,6 +10,10 @@ const router = createBrowserRouter([
   {
     path: "/home",
     element: <HomePage />,
+  },
+  {
+    path: "/auth",
+    element: <CombinedAuth />,
   },
 ]);
 
